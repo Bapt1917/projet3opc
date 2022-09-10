@@ -1,24 +1,6 @@
 
  /* -- KEY FRAMES --*/
 
-/* Slide left : validation*/
-.slide-left {
-    /* Déplacement de droite à gauche à droite de la case validation*/
-        -webkit-animation: slide-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.440) forwards;
-                animation: slide-left 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.440) forwards;
-    }
-    
-      @keyframes slide-left {
-        0% {
-                  transform: translateX(50);
-        }
-    
-        100% {
-                  transform: translateX(-50px);
-        }
-      }
-    
-    
     /*-- Rotation de l'icone check dans la case Validation--*/
     .rotate-center{
          animation: rotate-center 0.6s ease-in-out both;}
