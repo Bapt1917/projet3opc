@@ -1,8 +1,8 @@
 /*-- Loader --*/
 .spinner1 {
     /* style et emplecement du loader dans la page d'accueil */
-        width: 92px;
-        height: 92px;
+        width: 192px;
+        height: 192px;
         animation: spinner-3419ln 3s both;
         border-radius: 50%;
         background-color:#FF79DA;
@@ -12,7 +12,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: 20;
+        z-index: 10;
      }
      
      .spinner {
@@ -28,3 +28,59 @@
         z-index: 20;
         animation: spinner 3s linear;
         visibility: hidden;}
+
+
+/* -- Nouveau Loader -- */
+.load {
+    margin: auto;
+    position: fixed;
+    font-size: 50px;
+    font-family: 'Shrikhand', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    z-index: 20;
+    animation: tracking-in-contract-bck 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+.tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
