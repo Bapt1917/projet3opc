@@ -127,9 +127,14 @@ ul, ol, li {
 .backblanc p {
 margin:0px;
 }
+
 .backblanc:hover {
     /* le padding change en :hover pour le Boxmenu validation*/
     padding-right:100px;
+}
+.backblanc {
+    padding-right :15px;
+    transition: .5s;
 }
 
 .violet {
