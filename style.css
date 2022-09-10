@@ -128,15 +128,6 @@ ul, ol, li {
 margin:0px;
 }
 
-.backblanc:hover {
-    /* le padding change en :hover pour le Boxmenu validation*/
-    padding-right:100px;
-}
-.backblanc {
-    padding-right :15px;
-    transition: .5s;
-}
-
 .violet {
     /*violet charte graphique*/
     color:#9356DC;
@@ -440,10 +431,20 @@ font-size: 20px;
 /* Style et animation de l'icone Check dnas la case verte*/
         font-size: 35px;
         color: white;
-        transform: rotate(180deg);
-        animation: rotate-center 0.6s ease-in-out both;
 }
-   
+
+.backblanc:hover {
+    /* Important: Déplace le prix et fait apparaitre la validation en :hover pour le Boxmenu validation*/
+    padding-right:100px;
+}
+.backblanc {
+    padding-right :15px;
+    transition: .5s;
+}
+.backblanc:hover .validation i {
+    transform: rotate(180deg);
+    animation: rotate-center 0.6s ease-in-out both;
+}
 .boxmenu:hover .validation  {
 /* Alignement de la case validation dans les cartes boxmenu*/
     right:0.01px;
@@ -466,11 +467,6 @@ font-size: 20px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.backblanc:hover {
-/* Important : déplace le texte des boxmenu lors de l'apparation de la case validation*/
-    padding-right:100px;
 }
 
   /* -- Délai  personalisés des animations des cartes boxmenu dans les pages restaurants--*/
