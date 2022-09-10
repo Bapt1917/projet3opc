@@ -1,0 +1,30 @@
+/*-- Loader --*/
+.spinner1 {
+    /* style et emplecement du loader dans la page d'accueil */
+        width: 92px;
+        height: 92px;
+        animation: spinner-3419ln 3s both;
+        border-radius: 50%;
+        background-color:#FF79DA;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+     }
+     
+     .spinner {
+    /* Arrière plan du loader */
+        height: 100%;
+        background: white;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        animation: spinner 3s linear;
+        visibility: hidden;}

@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+a:hover, figure:hover ,li:hover  {
+    /* Mise en valeur des liens*/
+    transform: scale(1.03);
+}
+
+figure {
+    margin: 0px;
+}
+/* Tailles */
+h1 {
+    /* Affichage du "Ohmyfood" dans le header*/
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    box-shadow: 0px 3px 3px #bbb5b5;
+    padding-bottom: 20px;
+    margin-bottom:1px;
+}
+
+
+.policecharte {
+    /* police des titre pour Ohmyfood*/
+    font-family: 'Shrikhand', cursive;
+}
+
+ h2, h3, p, li, span {
+    /* Police des corps de texte*/
+    font-family: 'Roboto', sans-serif;
+}
+
+.majuscule{
+    /* Majuscules pour les titres des pages menu*/
+    text-transform: uppercase;
+}
+
+
+/* position */
+.relative {
+position: relative;
+}
+/* Font Size */
+
+.fontsize20 {
+    font-size: 20px;
+}
+
+.fontsize15 {
+    font-size: 15px;
+}
+.fontsize14 {
+    font-size: 14px;
+}
+.fontsize13 {
+    font-size: 13px;
+}
+.fontsize30 {
+    font-size:30px;
+}
+.bold {
+    font-weight :bold; 
+}
+
+/* Marges */
+.marginleft10{
+    margin-left:10px;
+}
+.marginbottom25 {
+    margin-bottom: 25px;
+}
+.margehautbasreduit {
+    margin: 7px 0px 0px 0px;
+}
+.marginleftonly {
+margin: 0px 0px 0px 10px;}
+
+/* Flexbox*/
+
+.flexboxcenter {
+/* Aligne l'icone avec le texte " Paris, Belleville" dans la page d'accueil */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.flexcolumncenter{
+/* Aligne le bouton Commander dans les pages restaurant */
+display: flex;
+flex-direction: column;
+align-items: center;}
+
+.flexcolumncenter1{
+/* Aligne les cartes fonctionnements dans la page d'accueil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flexcolumn {
+/* Aligne les titres et le soulignement dans les paes restaurants */
+    display:flex;
+    flex-direction: column;
+}
+/* Listes à puces */
+ul, ol, li {
+    /* Pas de puce pour les listes à puces*/
+    list-style: none;
+}
+
+/* Couleurs*/
+
+.blanc {
+    color:white;
+}
+.backblanc {
+    background-color: white;
+}
+
+.backblanc p {
+margin:0px;
+}
+.backblanc:hover {
+    /* le padding change en :hover pour le Boxmenu validation*/
+    padding-right:100px;
+}
+
+.violet {
+    /*violet charte graphique*/
+    color:#9356DC;
+}
+
+.mauve {
+    /*mauve charte graphique*/
+    color:#FF79DA;
+}
+
+.backgris1 {
+    /*gris de la page d'accueil */
+    background-color : #e7e4e4;
+}
+.backgris2 {
+    /* Deuxième gris de la page d'accueil et menu*/
+    background-color : #F2F2F2;
+}
+
+/*alignements*/
+.textaligncenter {
+text-align :center;}
+
+/*padding*/
+.padding20{
+    padding:20px;
+}
+.padding50{
+    padding:50px;
+}
+/*--LOADER --*/
+
+/* Icone Coeur*/
+
+.fa-heart {
+    font-size:25px;
+}
+
+.fa-heart:hover {
+    /* Mise en valeur du coeur sur les différentes pages*/
+    color: transparent;
+    background-image: linear-gradient(45deg, hsl(267deg 79% 73%) 0%, hsla(317, 100%, 74%, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform:  scale(1.2);
+    font-weight: 900;
+}
+
+/* boutton*/
+
+.bouttonexplorer{
+    /* Boutton explorer de la page d'accueil*/
+    background: linear-gradient(45deg, hsl(267deg 79% 73%) 0%, hsla(317, 100%, 74%, 1) 100%);
+    color: white;
+    padding: 16px 25px 15px;
+    border-radius: 28px;
+    box-shadow: 1px 3px 3px grey;
+    border: transparent;
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+}
+
+button:hover {
+        /* Mise en valeur du boutton explorer de la page d'accueil : S'éclaircit */
+    background: linear-gradient(45deg, rgb(206, 171, 247) 0%, rgb(251, 175, 229) 100%);
+}
+
+/* Section Fonctionement */
+
+.stylenumfonc1 {
+    /* Style des puces sur les carte fonctionnement de la page d'accueil */
+color: white;
+    font-weight: bold;
+    background-color: #9356DC;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    left: -11px;
+    position: absolute;
+}
+
+.alignfonc1 {
+    /* Alignement des cartes fonctionnements sur la page d'accueil */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 100%;
+max-width: 600px;
+}
+
+.boxfonc {
+    /* Cartes fonctionnements sur la page d'accueil */
+background-color: #f0f0f0;
+border-radius: 25px;
+box-shadow: 1px 3px 7px #cbc3c3;
+font-size: 20px;
+position: relative;
+width: 100%;
+max-width: 600px;
+}
+
+.boxfonc:hover {
+    /* Mise en valeur des cartes fonctionement*/
+    background-color: #e9ddf8; 
+}
+.boxfonc:hover i {
+    color: #9356DC;
+}
+
+/* Restaurants */
+
+.photorestaurant{
+    /* Style des photos des cartes restaurants de la page d'accueil */
+    width:100%;
+    height:200px;
+    border-radius:25px 25px 0px 0px;
+}
+
+.flexcartes {
+/* aligne les éléments du corps de texte des cartes restaurants de la page d'accueil */
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: space-between;
+align-items: center;
+padding:10px 20px 0px 20px;
+}
+
+.corprestaurant {
+    /* Style des corps de texte des cartes restaurants de la page d'accueil */
+    background-color:white;
+    border-radius: 25px;
+    box-shadow: 1px 3px 7px #cbc3c3;
+    position: relative;
+}
+
+.soustitrecartes {
+    /* Placement et taille des sous-titre des cartes restaurants de la page d'accueil */
+    padding:0px 10px 20px 20px;
+    font-size: 14px;
+}
+
+.nouveau {
+    /* Vignette "Nouveau" placés sur les cartes restaurants de la page d'accueil */
+    position: absolute;
+    color: green;
+    background-color: #99e2d0;
+    font-size: 20px;
+    padding: 6px;
+    margin :20px;
+    right: 20px;
+}
+
+/* Footer */
+.footer {
+    /* Background du footer */
+    background-color: #282828;
+}
+
+.footertitre {
+    /* Titre du Footer Ohmyfood*/
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+}
+
+.footerlien12 {
+    /*  Footer Alignement des titre 1 et 2 avec leurs icones */
+    display: flex;
+    align-items: center;
+}
+
+/*---  Pages Restaurants ---- */
+.carte {
+    /* Elements englobant tout ce qui se trouve sous la photo */
+    width: 100%;
+}
+.headback {
+    /* Flèche de retour en haut à droite de l'écran */
+position: absolute;
+width: 50px;
+height: 50px;
+position: absolute;
+left: 35px;
+top:30px;
+font-size: 20px;
+}
+
+.photopages {
+    /* Style des photos de présentation dans les pages de Menu */
+    width: 100%; 
+    object-fit: cover;
+    height: 52vh;
+}
+
+.menus1 {
+    /* Section englobant les titres, cartes des plates et et boutton dans les pages de Menu */
+    margin-top: -128px;
+    padding: 0 20px;
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    background-color: #F6F6F6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.boxmenu {
+    /* Style des cartes des entrées, plats, desserts  dans les pages de Menu */
+    border-radius: 25px;
+    padding:0px 10px 0px 10px;
+    box-shadow: 1px 3px 7px #cbc3c3;
+    font-size: 15px;
+    margin: 10px 0px 10px 0px;
+    height: 81px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+
+.boxmenu p {
+    /* Cache le texte des cartes des plats lors de l'apparition de la case validation*/
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.flexmenu {
+    /* Alignement du sous-titre et du prix dans les cartes des plats */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.bouttonmenu {
+    /* Bouttons "Commander" dans les pages de Menu */
+    background: linear-gradient(45deg, hsl(267deg 79% 73%) 0%, hsla(317, 100%, 74%, 1) 100%);
+    color: white;
+    height: 50px;
+    width: 60%;
+    border-radius: 28px;
+    box-shadow: 1px 3px 3px grey;
+    border: transparent;
+    font-family: roboto, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    max-width: 600px;
+    animation: scale-in-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1s;
+
+}
+
+.majuscule::after {
+    /* Soulignement Vert sous les titres Entrées, plats, desserts dans les pages de Menu */
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #99e2d0;
+    position: absolute;
+    z-index: 20;
+    left: 0px;
+    bottom:9px;
+}
+
+/* Animations */
+
+.boxmenu .validation {
+/* Emplacement et apparition du la case verte sur les cartes des plats dans les pages restaurants */
+    display: none;
+    position: absolute;
+    background: #99E2D0;
+    border-radius: 0px 10px 10px 0px;
+    border: solid #99E2D0;
+    right: -50px;
+    padding: 0 25px;
+    height: 100%;
+    animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.600, 0.940) both;
+}
+
+.validation i {
+/* Style et animation de l'icone Check dnas la case verte*/
+        font-size: 35px;
+        color: white;
+        transform: rotate(180deg);
+        animation: rotate-center 0.6s ease-in-out both;
+}
+   
+.boxmenu:hover .validation  {
+/* Alignement de la case validation dans les cartes boxmenu*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform-origin: right;  
+}
+
+.validation {
+/* Emplacement caché de la case validation */
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+}
+
+.responsive {
+/* Alignement des cases Entrées, Plats et desserts en fonction de la taille d'écran*/
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.backblanc:hover {
+/* Important : déplace le texte des boxmenu lors de l'apparation de la case validation*/
+    padding-right:100px;
+}
+
+  /* -- Délai  personalisés des animations des cartes boxmenu dans les pages restaurants--*/
+.case1 {
+    animation-delay: 0.1s;
+    }
+    .case2 {
+    animation-delay: 0.2s;
+    }
+    .case3 {
+        animation-delay: 0.3s;
+    }
+    .case4 {
+        animation-delay: 0.4s;
+    }
+    .case5 {
+        animation-delay: 0.5s;
+    }
+    .case6 {
+        animation-delay: 0.6s;
+    }
+    .case7 {
+        animation-delay: 0.7s;
+    }
+    .case8 {
+        animation-delay: 0.8s;
+    }
+    .case9 {
+        animation-delay: 0.9s;
+    }
+  
+    /*-- Loader --*/
+.spinner1 {
+    /* style et emplecement du loader dans la page d'accueil */
+        width: 92px;
+        height: 92px;
+        animation: spinner-3419ln 3s both;
+        border-radius: 50%;
+        background-color:#FF79DA;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+     }
+     
+     .spinner {
+    /* Arrière plan du loader */
+        height: 100%;
+        background: white;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        animation: spinner 3s linear;
+        visibility: hidden;}
+

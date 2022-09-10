@@ -1,0 +1,56 @@
+/* -- Medias Queries --*/
+@media screen and (min-width:1021px){
+    .boxmenu {
+        max-width:315px;
+      }
+      .flexrestaurants {
+/* Disposition des cartes des restaurants dans la pages d'accueil */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .figurerestaurants {
+/* Taille des cartes des restaurants dans la pages d'accueil */
+        width:40%;
+        min-width:250px;
+      }
+    .carte {
+/* Placement des cartes des plats (boxmenu) dans les pages Restaurants */
+    display: flex;
+    align-items: flex-start;
+      }
+     ol {
+/* Taille et disposition des lien footer en fontion de la taille d'écran */
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+       }
+     .flexcolumncenter1{
+/* Disposition des carte Fonctionement en fontion de la taille d'écran */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+       }
+      .boxfonc {
+/* Tailles des cartes fonctionements en fonction de la taille d'écran*/
+    max-width: 350px;
+    margin-left: 10px;
+       }
+}
+
+@media screen and (min-width:1249px){
+      .boxmenu {
+        /* Taille des cartes plats des pages restaurant en fonction de la taille d'écran */
+       max-width:100%;
+      }
+      .fontsize14 {
+        font-size: 18px;
+      }
+      .fontsize13 {
+        font-size : 15px;
+      }
+      .soustitrecartes{
+        font-size : 16px;
+      }
+}
