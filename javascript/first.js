@@ -8,7 +8,7 @@ alert ('Bonjour, je suis UTRON et je fais bugger ton site');
 console.log ('Texte en console');
 
 // Création de la promesse
-const promoseGetUsers = new Promise(function(resolve, reject) {
+/* const promoseGetUsers = new Promise(function(resolve, reject) {
     if(USER!== 'undifined') {
         resolve (USER);
     } else { 
@@ -23,4 +23,13 @@ promoseGetUsers
 })
 .catch(function(u){
         console.log(u);
-});
+});*/
+
+// Déclarations et affection
+
+let prenom ='Popo'; //String
+let age = 32 ;  //number
+let enligne= true; //Bolean (vrai ou faux)
+let choix= null; //null
+
+console.log (`Libérez ${prenom} !!`);
