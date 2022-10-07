@@ -4,3 +4,5 @@
 sur plusieurs ligne */
 
 alert ('Bonjour, je suis Baptiste'); 
+//texte dans la console
+console.log ('Texte en console');
