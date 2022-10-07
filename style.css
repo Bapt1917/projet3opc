@@ -51,7 +51,6 @@ position: relative;
 .fontsize20 {
     font-size: 20px;
 }
-
 .fontsize15 {
     font-size: 15px;
 }
@@ -431,6 +430,10 @@ font-size: 20px;
     align-items: center;
     transform-origin: right;
 }
+.boxmenu:hover .validation  {
+    /* Déplacement de la case validation dans les cartes boxmenu*/
+        right:0px;
+    }
 
 .validation i {
 /* Style et animation de l'icone Check dnas la case verte*/
@@ -438,22 +441,20 @@ font-size: 20px;
         color: white;
 }
 
-.backblanc:hover {
-    /* Important: Déplace le prix et fait apparaitre la validation en :hover pour le Boxmenu validation*/
-    padding-right:100px;
-}
 .backblanc {
     padding-right :15px;
     transition: .8s;
 }
+.backblanc:hover {
+    /* Important: Déplace le prix et fait apparaitre la validation en :hover pour le Boxmenu validation*/
+    padding-right:100px;
+}
+
 .backblanc:hover .validation i {
     transform: rotate(180deg);
     animation: rotate-center 0.6s ease-in-out both;
 }
-.boxmenu:hover .validation  {
-/* Alignement de la case validation dans les cartes boxmenu*/
-    right:0.01px;
-}
+
 
 .validation {
 /* Emplacement caché de la case validation */

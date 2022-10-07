@@ -14,7 +14,7 @@
         }
 }
     
-/*-- Apparition des cartes boxmenu dans les pages restaurants--*/-- */
+/*-- Apparition du bouton COMMANDER dans les pages restaurants--*/
 .scale-in-center {
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
@@ -29,6 +29,7 @@
         }
       }
       @keyframes fade-in-bottom {
+/*-- Apparition des cartes boxmenu dans les pages restaurants--*/
         0% {
                   transform: translateY(50px);
           opacity: 0;
@@ -37,65 +38,6 @@
                   transform: translateY(0);
           opacity: 1;
         }
-}
-    
- /* Animation du loadder*/
- @keyframes spinner-3419ln {
-    10% {
-        visibility: visible;
-        opacity: 1;
-       transform: skewX(60deg);
-    }
- 
-    20% {
-        visibility: visible;
-        opacity: 1;
-       transform: skewX(-60deg);
-    }
- 
-    30% {
-        visibility: visible;
-        opacity: 1;
-       transform: skewX(0deg);
-    }
- 
-    40% {
-        visibility: visible;
-        opacity: 1;
-       transform: skewY(60deg);
-    }
- 
-    50% {
-        visibility: visible;
-        opacity: 1;
-       transform: skewY(-60deg);
-    }
- 
-    60% {
-        visibility: visible;
-        opacity: 1;
-        transform: skewY(0);
-    }
-    100% {
-        visibility: hidden;
-        opacity: 0;
-        transform: skewY(0);
-    }
- }
-
-@keyframes spinner {
-    /* Evolution de l'opacité de l'arrière plan du loader */
-        0% {
-        visibility: visible;
-        opacity: 0.9;}
-    
-        70% {
-        visibility: visible;
-        opacity: 0.9;}
-    
-        100% {
-        visibility: hidden;
-        opacity: 0;}
 }
 
     /* -- Key Frame Fin --*/

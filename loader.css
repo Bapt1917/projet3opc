@@ -30,7 +30,7 @@
         visibility: hidden;}
 
 
-/* -- Nouveau Loader -- */
+/* -- Apparrition du "Ohmyfood" -- */
 .load {
     margin: auto;
     position: fixed;
@@ -54,7 +54,6 @@
  @-webkit-keyframes tracking-in-contract-bck {
     0% {
       letter-spacing: 1em;
-      -webkit-transform: translateZ(400px);
               transform: translateZ(400px);
       opacity: 0;
     }
@@ -62,7 +61,6 @@
       opacity: 0.6;
     }
     100% {
-      -webkit-transform: translateZ(0);
               transform: translateZ(0);
       opacity: 1;
     }
@@ -70,7 +68,6 @@
   @keyframes tracking-in-contract-bck {
     0% {
       letter-spacing: 1em;
-      -webkit-transform: translateZ(400px);
               transform: translateZ(400px);
       opacity: 0;
     }
@@ -78,9 +75,66 @@
       opacity: 0.6;
     }
     100% {
-      -webkit-transform: translateZ(0);
               transform: translateZ(0);
       opacity: 1;
     }
   }
   
+   /* Animation du loadder*/
+ @keyframes spinner-3419ln {
+  10% {
+      visibility: visible;
+      opacity: 1;
+     transform: skewX(60deg);
+  }
+
+  20% {
+      visibility: visible;
+      opacity: 1;
+     transform: skewX(-60deg);
+  }
+
+  30% {
+      visibility: visible;
+      opacity: 1;
+     transform: skewX(0deg);
+  }
+
+  40% {
+      visibility: visible;
+      opacity: 1;
+     transform: skewY(60deg);
+  }
+
+  50% {
+      visibility: visible;
+      opacity: 1;
+     transform: skewY(-60deg);
+  }
+
+  60% {
+      visibility: visible;
+      opacity: 1;
+      transform: skewY(0);
+  }
+  100% {
+      visibility: hidden;
+      opacity: 0;
+      transform: skewY(0);
+  }
+}
+
+@keyframes spinner {
+  /* Evolution de l'opacité de l'arrière plan du loader */
+      0% {
+      visibility: visible;
+      opacity: 0.9;}
+  
+      70% {
+      visibility: visible;
+      opacity: 0.9;}
+  
+      100% {
+      visibility: hidden;
+      opacity: 0;}
+}
